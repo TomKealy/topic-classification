@@ -43,6 +43,5 @@ RUN pip install -U pip \
     && pip install -r requirements.txt
 
 RUN mkdir /topics
-WORKDIR /topics/
 
 COPY . ./topics

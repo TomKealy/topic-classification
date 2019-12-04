@@ -1,6 +1,16 @@
 # How to run
 
+Please create a new conda environment
 
+`conda create -n topics python=3.6 anaconda`
+
+Use `pip freeze` to check that `sklearn` and `numpy` are installed.
+
+`python topics.py` will run the main script.
+
+With `docker` please run `make build` to build the container.
+
+Then `docker run -it IMAGE_ID bash` to launch bash in the container, and then `python topics/topics.py` to run the script.
 
 # Solution Description
 
@@ -31,6 +41,12 @@ We evaluate using the weighted F1-score. This is the F1 score for each class, we
 
 ## Otimizing your classifier
 
+Due to illness we have not done this part.
+
 ## Ensuring the research is reproducible and fit for sharing
 
+Ideally this would be wrapped in a Docker container, but due to illness this hasn't been completed.
+
 ## Scaling and generalizing
+
+N/A due to illness.
