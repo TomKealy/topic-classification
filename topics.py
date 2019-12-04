@@ -9,6 +9,15 @@ from sklearn.metrics import f1_score
 
 
 def map_target(x):
+    """
+    Function to re-map the target so that only relevant targets are considered.
+    11, 12 ,13, 14 are the encoded targets of medicine, space, cryptography, electronics.
+    All other topics are encoded as -1
+
+    TODO: remove hardcoded values.
+    :param x: target
+    :return: new_target
+    """
     if x == 11:
         return x
     elif x == 12:
